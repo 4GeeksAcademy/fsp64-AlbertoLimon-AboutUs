@@ -6,15 +6,15 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 const MyCard = () => {
 	const developers = [
-		{name: "Alberto", info:"", image:"", alias:""},
-		{name: "Albert", info:"", image:"", alias:""},
-		{name: "María", info:"", image:"", alias:""},
-		{name: "Andre", info:"", image:"", alias:""},
-		{name: "Cristina", info:"", image:"", alias:""},
+		{name: "Alberto", info:"", image:"./limon.jpg", alias:""},
+		{name: "Albert", info:"", image:"./albert.jpg", alias:""},
+		{name: "María", info:"", image:"./maria.jpg", alias:""},
+		{name: "Andre", info:"", image:"./andre.jpg", alias:""},
+		{name: "Cristina", info:"", image:"./cristina.jpg", alias:""},
 	];
 	return (
-        <div className="card" style={{width: "18rem"}}>
-          <img className="card-img-top" src={rigoImage} alt="Card image cap" />
+        <div className="card w-75" style={{width: "18rem"}}>
+          <img className="card-img-top" src={developers.image} alt="Card image" />
           <div className="card-body">
             <h4 className="card-title">{developers.name}</h4>
 			<h5 className="card-title">{developers.alias}</h5>
@@ -27,14 +27,14 @@ const MyCard = () => {
 }
 const FAQs = () => {
 	return (
-		<div className="text-center">
+		<div className="text-center mt-5">
 			
-			<h1 className="text-center mt-5">Frequently asked questions</h1>
+			<h1 className="text-center">Frequently asked questions</h1>
 			<p>
 				Welcome to our FAQs page! We have compiled a list of commonly asked questions to provide you with quick and informative answers
 			</p>
-			<div class="accordion w-75" id="accordionExample">
-  <div class="accordion-item d-flex flex-column justify-content-center">
+			<div class="accordion w-75 mx-auto" id="accordionExample">
+  <div class="accordion-item d-flex flex-column justify-content-around">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         Accordion Item #1
