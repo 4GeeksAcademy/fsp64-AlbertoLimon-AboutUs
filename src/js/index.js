@@ -7,6 +7,7 @@ import "../styles/index.css";
 
 //import your own components
 import AboutUs from "./component/home.jsx";
+import Footer from "./component/footer/footer.jsx";
 
 //render your react application
-ReactDOM.render(<AboutUs />, document.querySelector("#app"));
+ReactDOM.render(<Footer />, document.querySelector("#app"));

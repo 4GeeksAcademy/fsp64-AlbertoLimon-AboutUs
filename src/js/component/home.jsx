@@ -1,7 +1,10 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faTelegram, faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+
 
 import '../../styles/index.css';
 
@@ -84,10 +87,10 @@ const Footer = () => {
 	return (
 		<>
 		<div className="b-example-divider"></div>
-			<div className="container" id="footer">
+			<div className="container" id="contenedor-footer">
 				<footer className="py-5">
-					<div className="row">
-						<div className="col-3 nav-footer">
+					<div className="row border-bottom border-secondary pb-5">
+						<div className="col-2 nav-footer">
 							<h5>Quick Links</h5>
 							<ul className="nav flex-column">
 								<li className="nav-item mb-2"><a href="">Privacy Policy</a></li>
@@ -95,19 +98,30 @@ const Footer = () => {
 								<li className="nav-item mb-2"><a href="">AstroTeam.com</a></li>
 							</ul>
 						</div>
-						<div className="col-3 nav-footer">
+						<div className="col-2 nav-footer">
 							<h5>Contact Us</h5>
 							<ul className="nav flex-column">
 								<li className="nav-item mb-2"><a href="">astroteam@gmail.com</a></li>
-								<li className="nav-item mb-2">19281230123</li>
+								<li className="nav-item mb-2">+34 628328332</li>
+							</ul>
+						</div>
+
+						<div className="col-2 nav-footer">
+							<h5>Follow</h5>
+							<ul className="nav flex-column">
+								<li className="nav-item mb-2"><FontAwesomeIcon icon={faInstagram}/> Instagram </li>
+								<li className="nav-item mb-2"><FontAwesomeIcon icon={faTelegram} /> Telegram</li>
+								<li className="nav-item mb-2"><FontAwesomeIcon icon={faFacebookF}/> Facebook</li>
+								<li className="nav-item mb-2"><FontAwesomeIcon icon={faTwitter} /> Twitter</li>
+								
 							</ul>
 						</div>
 						
 						<div className="col-6 nav-footer">
 							<form action="">
-								<h5 className="text-white">Susbcribe to our page</h5>
+								<h5 className="">Susbcribe to our page</h5>
 								<p>Monthly digest of what`s new and interesting for ur</p>
-								<div className="d-flex flex-row justify-content-center gap-3">
+								<div className="d-flex flex-row gap-3">
 									
 									<input type="text" className="form-control w-50" placeholder="Email Address" />
 									<button type="button" className="btn btn-light">Subscribe</button>
